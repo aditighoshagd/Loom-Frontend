@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loom — Write. Publish. Grow.</title>
+    <meta
+      name="description"
+      content="Loom is a modern newsletter platform for writers who want to publish, grow an audience, and connect with readers."
+    />
+    <meta name="author" content="Loom" />
+    <meta property="og:title" content="Loom — Write. Publish. Grow." />
+    <meta
+      property="og:description"
+      content="Publish newsletters and short notes. Build your audience. AI-powered writing tools."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://loom.solvix.buzz" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('loom_theme');
+          if (!t) {
+            t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          }
+          var r = document.documentElement;
+          if (t === 'dark') {
+            r.classList.add('dark');
+          }
+          r.style.colorScheme = t;
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
